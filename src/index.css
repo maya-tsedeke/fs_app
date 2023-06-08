@@ -1,0 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 2em;
+  padding: 40px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  padding: 1em;
+  text-align: left;
+  border-radius: 0.5rem;
+
+}
+
+h1 {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, span {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
